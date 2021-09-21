@@ -1,0 +1,87 @@
+@use "util" as *;
+
+.header-signin {
+  max-width: 60vw;
+
+  // a {
+  //   color: var(--gray);
+  // }
+}
+
+.hero__form {
+  max-width: 60%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > div {
+    margin-inline: auto;
+    max-width: rem(600);
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+    }
+
+    .create {
+      display: flex;
+      gap: rem(5);
+      font-size: rem(18);
+
+      a {
+        text-decoration: underline;
+        color: #18afdd;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+.hero__review {
+  height: 100vh;
+  width: 40%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cream);
+
+  > div {
+    margin-inline: auto;
+  }
+
+  h3 {
+    max-width: rem(300);
+  }
+
+  .testimonial {
+    display: grid;
+    max-width: max-content;
+    grid-template-columns: max-content auto;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "avatar name" "avatar subtitle";
+    align-items: center;
+    column-gap: rem(16);
+
+    .avatar {
+      grid-area: avatar;
+      height: 100%;
+    }
+
+    .name {
+      grid-area: name;
+      margin-bottom: 0;
+      font-weight: 700;
+      color: black;
+    }
+
+    .subtitle {
+      grid-area: subtitle;
+      margin-bottom: 0;
+    }
+  }
+}

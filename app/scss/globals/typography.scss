@@ -1,0 +1,35 @@
+@use "../util/" as *;
+
+.container {
+  padding-inline: rem(25);
+  max-width: rem(1110);
+  margin: 0 auto rem(46);
+
+  @include breakpoint(large) {
+    padding: 0;
+  }
+}
+
+h1 {
+  font-size: rem(55);
+  margin-bottom: 0.3em;
+}
+
+h2 {
+  font-size: rem(40);
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: rem(25);
+  margin-bottom: 1em;
+}
+
+p {
+  color: var(--gray);
+  margin-bottom: 1.5em;
+}
+
+q {
+  line-height: 1.8;
+}
